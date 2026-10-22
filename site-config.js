@@ -6,9 +6,9 @@ window.ISOBOX = {
   email: "isoboxmusic@gmail.com",
   // The address of your hosted privacy policy (the GitHub page you already made).
   privacy: "https://grahamhutchinson.github.io/app-privacy/",
-  // Your music. The file must be in the "music" folder of the repository, with exactly this name
-  // (capital letters matter on GitHub). Add one line per track.
+  // Your music. Put the files in the "music" folder and list them here. Delete the examples.
+  // "lrc" is optional: the matching timed-lyrics file, with the same name as the song (IsoBoxWelcome.m4a -> IsoBoxWelcome.lrc).
   tracks: [
-    { title: "IsoBox Welcome", note: "Introduction to IsoBox", file: "music/IsoBoxWelcome.m4a" }
+    { title: "IsoBox Welcome", note: "Introduction to IsoBox", file: "music/IsoBoxWelcome.m4a", lrc: "music/IsoBoxWelcome.lrc" }
   ]
 };

@@ -13,6 +13,9 @@
       if (t.note) { var p = document.createElement("p"); p.textContent = t.note; d.appendChild(p); }
       var a = document.createElement("audio"); a.controls = true; a.preload = "none"; a.src = t.file; d.appendChild(a);
       var l = document.createElement("a"); l.href = t.file; l.setAttribute("download", ""); l.className = "btn small"; l.textContent = "Download"; d.appendChild(l);
+      if (t.lrc) {
+        var r = document.createElement("a"); r.href = t.lrc; r.setAttribute("download", ""); r.className = "btn small ghost2"; r.textContent = "Download lyrics (.lrc)"; d.appendChild(document.createTextNode(" ")); d.appendChild(r);
+      }
       list.appendChild(d);
     });
   }

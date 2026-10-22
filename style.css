@@ -18,6 +18,7 @@ nav a:hover,nav a.on{color:var(--text);background:var(--bg2)}
 .hero img.shot{max-width:280px;margin:auto;display:block;border-radius:28px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
 .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px;border:0;cursor:pointer}
 .btn.ghost{background:transparent;border:2px solid #fff}.btn.small{padding:7px 16px;font-size:15px}
+.btn.ghost2{background:transparent;border:2px solid var(--accent);color:var(--accent)}
 .btn.soon{background:#8a8aa8;cursor:default}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 section{padding:48px 0}section.alt{background:var(--bg2)}
