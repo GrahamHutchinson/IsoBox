@@ -1,0 +1,46 @@
+:root{--bg:#120d2b;--bg2:#1c1442;--card:#231a52;--text:#f4f1ff;--muted:#b9b1dc;--accent:#f2506f;--accent2:#7b4bd6;--line:#3a2f78;--radius:18px}
+@media (prefers-color-scheme: light){:root{--bg:#faf8ff;--bg2:#f0ebff;--card:#ffffff;--text:#1d1640;--muted:#5d5588;--line:#ddd5f5}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.site{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--text);text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:8px}
+nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px;font-size:15px}
+nav a:hover,nav a.on{color:var(--text);background:var(--bg2)}
+.hero{background:linear-gradient(135deg,#2a1a6e,#7b2f86 55%,#f2506f);color:#fff;padding:64px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,54px);line-height:1.1;margin:0 0 14px}
+.hero p{font-size:19px;opacity:.95;margin:0 0 22px}
+.hero img.shot{max-width:280px;margin:auto;display:block;border-radius:28px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;border:2px solid #fff}.btn.small{padding:7px 16px;font-size:15px}
+.btn.soon{background:#8a8aa8;cursor:default}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:48px 0}section.alt{background:var(--bg2)}
+h2{font-size:30px;margin:0 0 8px}h3{margin:0 0 6px}
+.lead{color:var(--muted);max-width:680px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card .ico{font-size:28px}.card p{margin:6px 0 0;color:var(--muted)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;align-items:start}
+.shots figure{margin:0;text-align:center}.shots img{border-radius:22px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+figcaption{color:var(--muted);font-size:14px;margin-top:8px}
+.guide{display:grid;grid-template-columns:230px 1fr;gap:36px;padding:40px 0}
+.toc{position:sticky;top:76px;align-self:start;max-height:calc(100vh - 100px);overflow:auto;font-size:15px}
+.toc a{display:block;color:var(--muted);text-decoration:none;padding:5px 0}.toc a:hover{color:var(--accent)}
+.topic{padding:8px 0 34px;border-bottom:1px solid var(--line);margin-bottom:30px}
+.topic .row{display:grid;grid-template-columns:1fr 200px;gap:26px;align-items:start}
+.topic img{border-radius:20px;border:1px solid var(--line)}
+.topic ol,.topic ul{padding-left:22px}.topic li{margin:4px 0}
+.tip{background:var(--bg2);border-left:4px solid var(--accent);padding:10px 14px;border-radius:8px;margin:12px 0;font-size:15px}
+.track{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+.track audio{width:100%;margin:8px 0 10px}.track p{margin:0;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+@media(max-width:760px){.hero .wrap,.guide,.topic .row{grid-template-columns:1fr}.toc{position:static;max-height:none}.hero img.shot{max-width:220px}.topic .row img{max-width:200px}nav{margin-left:0}}
